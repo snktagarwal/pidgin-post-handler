@@ -22,7 +22,7 @@ def collect(request):
         # Save the object to the DB
         user_sub = UserStatSub()
         user_sub.uname = uname
-        user_sub.im_service = im_service
+        user_sub.im_services = im_service
         user_sub.save()
 
         response = 'Thanks <i>' + uname + '</i> to submit report for im <i>' + im_service + '</i>. Your request has been recorded'
