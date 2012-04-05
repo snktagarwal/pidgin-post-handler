@@ -1,0 +1,25 @@
+This is just a POC to handle GET request.
+
+INSTALL
+======
+
+The website is embedded with the APP, so you can simply download it and:
+
+* Set the appropriate settings for DB at settings.py
+* python manage.py syncdb
+* python manage.py runserver 8000
+
+And you should be good to go.
+
+DEMO
+====
+
+Goto: http://localhost:8000/collectstats/ to see the default page
+Goto: http://localhost:8000/collectstats/collect/?uname=xx&im_service=xx
+to see how GET requests are handled on the server.
+
+ADMIN
+====
+
+The admin interface is handled at /admin/, you can see the various database
+being populated. In particular look for UserStatSub table.
