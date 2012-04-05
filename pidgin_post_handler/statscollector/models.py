@@ -18,5 +18,5 @@ class UserStatSub(models.Model):
   uname = models.CharField(max_length=200)
 
   # Choice of IM Service for the user
-  im_services = models.CharField(max_length=3, choices=IM_SERVICE_CHOICE)
+  im_services = models.CharField(max_length=10, choices=IM_SERVICE_CHOICE)
   time_of_sum = models.DateTimeField(auto_now=True, auto_now_add=True)
